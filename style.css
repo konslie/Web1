@@ -26,7 +26,7 @@ span{
 span a {
   color:blue;font-weight:bold;
 }
-@media(max-width:500px){
+@media(max-width:3300px){
   #grid{
     display:block;
   }

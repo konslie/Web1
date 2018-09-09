@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1><a href="https://konslie.github.io/web2">Web_Konslie</a></h1>
+    <h1><a href="index.html">Web_Konslie</a></h1>
     <div id="grid">
       <div id="index">
         <h2>List</h2>
@@ -16,29 +16,35 @@
           <li><a href="3.html" class="c">JavaScript</a></li>
           <li><a href="4.html" class="d">MV Page<br><span style="color:lightgray">용희 요청<span></a></li>
         </ol>
-        <input id="switch" type="button" value="Night" onclick="
-          if(document.querySelector('#switch').value==='Night'){
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';
-            document.querySelector('#switch').value='Day'
-            document.querySelector('span a').style.color='powderblue';
-            document.querySelector('span').style.color='powderblue';
+        <input type="button" value="Night" style="font-weight:bold;" onclick="
+          var body = document.querySelector('body');
+          var sa = document.querySelector('span a');
+          var ps = document.querySelector('p span');
+          var a = document.querySelector('a');
+          if(this.value==='Night'){
+            body.style.backgroundColor='black';
+            body.style.color='white';
+            this.value='Day';
+            this.style.backgroundColor='powderblue';
+            sa.style.color='powderblue';
+            ps.style.color='powderblue';
             document.querySelector('.a').style.color='white';
             document.querySelector('.b').style.color='white';
             document.querySelector('.c').style.color='white';
             document.querySelector('.d').style.color='white';
-            document.querySelector('a').style.color='white';
+            a.style.color='white';
           } else {
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';
-            document.querySelector('#switch').value='Night'
-            document.querySelector('span a').style.color='blue';
-            document.querySelector('span').style.color='blue';
+            body.style.backgroundColor='white';
+            body.style.color='black';
+            this.value='Night'
+            this.style.backgroundColor='whitesmoke';
+            sa.style.color='blue';
+            ps.style.color='blue';
             document.querySelector('.a').style.color='black';
             document.querySelector('.b').style.color='black';
             document.querySelector('.c').style.color='black';
             document.querySelector('.d').style.color='black';
-            document.querySelector('a').style.color='black';
+            a.style.color='black';
           }
           ">
       </div>
