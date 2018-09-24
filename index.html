@@ -20,31 +20,30 @@
           var body = document.querySelector('body');
           var sa = document.querySelector('span a');
           var ps = document.querySelector('p span');
-          var a = document.querySelector('a');
+          var i = 0;
+          var alist = document.querySelectorAll('a');
           if(this.value==='Night'){
             body.style.backgroundColor='black';
             body.style.color='white';
             this.value='Day';
             this.style.backgroundColor='powderblue';
+            while(i < alist.length){
+              alist[i].style.color='white';
+              i = i + 1;
+            }
             sa.style.color='powderblue';
             ps.style.color='powderblue';
-            document.querySelector('.a').style.color='white';
-            document.querySelector('.b').style.color='white';
-            document.querySelector('.c').style.color='white';
-            document.querySelector('.d').style.color='white';
-            a.style.color='white';
           } else {
             body.style.backgroundColor='white';
             body.style.color='black';
-            this.value='Night'
+            this.value='Night';
             this.style.backgroundColor='whitesmoke';
+            while(i < alist.length){
+              alist[i].style.color='black';
+              i = i + 1;
+            }
             sa.style.color='blue';
             ps.style.color='blue';
-            document.querySelector('.a').style.color='black';
-            document.querySelector('.b').style.color='black';
-            document.querySelector('.c').style.color='black';
-            document.querySelector('.d').style.color='black';
-            a.style.color='black';
           }
           ">
       </div>
@@ -80,7 +79,5 @@
           The World Wide Web is most often referred to simply as "the Web."
         </p>
       </div>
-
-
   </body>
 </html>
