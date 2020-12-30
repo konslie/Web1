@@ -13,16 +13,23 @@ h1 {
   font-size:50px;
   border-bottom:1px solid gray;
 }
+li {
+  border: 1px solid lightgray;
+  height:45px;
+  font-size:25px;
+  margin-bottom:5px;
+}
 .quest {
   font-size:12px;
   font-weight:bold;
 }
 #grid {
   display: grid;
-  grid-template-columns:180px 1fr
+  grid-template-columns:250px 1fr
 }
 #list {
   border-right:1px solid gray;
+  margin-right:10px;
 }
 #article {
   padding-left:10px;
