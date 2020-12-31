@@ -1,9 +1,11 @@
 var Body = {
   setBackcolor : function(color){
-    document.querySelector('body').style.backgroundColor=color;
+    // document.querySelector('body').style.backgroundColor=color;
+    $('body').css('backgroundColor',color);
   },
   setColor : function(color){
-    document.querySelector('body').style.color=color;
+    // document.querySelector('body').style.color=color;
+    $('body').css('color',color);
   }
 }
 var Link = {
@@ -14,6 +16,7 @@ var Link = {
       aa[i].style.color=color;
       i = i + 1;
     }
+    $('a').css('color',color);
   }
 }
 function dmode(self) {
